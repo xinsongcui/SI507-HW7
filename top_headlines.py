@@ -13,7 +13,7 @@ urls = [x['url'] for x in response.json()['results'][0:5]]
 
 @app.route('/')
 def hello_world():
-    return "<h1>Hello!</h1>"
+    return "<h1>Welcome!</h1>"
 
 @app.route('/name/<username>')
 def hello(username):
